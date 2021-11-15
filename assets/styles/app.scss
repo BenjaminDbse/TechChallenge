@@ -1,0 +1,48 @@
+@import "variable.scss";
+@import "~bootstrap/scss/bootstrap";
+body {
+  background-color: $light;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+footer {
+  background: $white;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: $primary;
+  padding: 0.25em 0;
+}

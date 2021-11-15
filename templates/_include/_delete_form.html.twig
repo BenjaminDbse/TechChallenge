@@ -1,0 +1,4 @@
+<form method="post" action="{{ path('crew_delete', {'id': crew.id}) }}" onsubmit="return confirm('Voulez-vous supprimer {{ crew.name }} de la liste des argonautes?');">
+    <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ crew.id) }}">
+    <button class="btn btn-danger"><img src="{{ asset('build/images/trash.png') }}" alt="trash"></button>
+</form>
