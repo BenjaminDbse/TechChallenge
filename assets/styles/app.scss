@@ -10,6 +10,8 @@ body {
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-image: url("../pictures/beach.png");
+  background-size: cover;
 }
 
 main {
@@ -37,6 +39,9 @@ footer {
 
 h1, h2 {
   text-align: center;
+}
+.card-crew {
+  border-radius: $radius;
 }
 
 footer {

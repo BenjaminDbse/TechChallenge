@@ -3,16 +3,15 @@
 {% block title %}Welcome aboard !{% endblock %}
 
 {% block body %}
-    <main class="vh-100">
+    <main class="container-fluid vh-100">
         <h2 class="p-5">Ajouter un(e) Argonaute</h2>
         <div class="pb-5">
             {{ include('_include/_form.html.twig') }}
         </div>
-
         <h2 class="p-5">Membres de l'équipage</h2>
         <section class="member-list d-flex flex-wrap justify-content-center mt-5">
             {% for crew in crews %}
-                <div class="member-item card col-md-3 m-2 text-center">
+                <div class="member-item card col-md-3 m-2 text-center card-crew">
                     <div class="d-flex justify-content-between">
                         <div class="align-self-center m-1">{{ crew.name }}</div>
                         {{ include('_include/_delete_form.html.twig') }}
